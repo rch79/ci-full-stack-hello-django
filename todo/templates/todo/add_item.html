@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a to do item:</h1>  
+    <!--{{ items }} template variable (double curly brackets)-->
+    <form method="POST" action="add">
+        {% csrf_token %}  <!--ensures data submitted through POST comes indeed from the todo list app-->
+        {{ form.as_p }}  <!-- as_p adds the paragraph formatting to the form-->
+        <div>
+            <p>
+                <button type="submit">Add Item</button>
+            </p>
+        </div>
+    </form>
+    
+</body>
+</html>
