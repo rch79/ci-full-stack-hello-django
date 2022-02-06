@@ -17,6 +17,7 @@ import os
 # if there's an environment variable called DEVELOPMENT in the environment
 # the variable will be assigned its value, otherwise it will be set to False
 # to setup the DEVELOPMENT variable go to the Gipod settings
+# Workspace must be restarted for changes to be effective
 development = os.environ.get('DEVELOPMENT', False)
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
