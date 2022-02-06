@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(OS.environ.GET('DATABASE_URL'))
+    'default': dj_database_url.parse(os.environ.GET('DATABASE_URL'))
 }
 
 
